@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A00987471 - Online1</title>
+  
+    <style>
+        #container{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            
+            width: 100vw;
+            height:100vh;
+            background-image: url(1.jpg);
+            background-size: cover;
+            background-position: top center;
+           
+            
+        }
+        
+        #btn1 img{ Width: 30px;
+            height: 30px;
+            background-color: white;
+          position: absolute;
+             margin: 10px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 15px #363333;}
+        
+        #btn2 img{
+            Width: 30px;
+            height: 30px;
+            background-color: white;
+           position: relative;
+            top:60px;
+             margin: 10px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 15px #363333;
+        }
+        
+    </style>
+    
+    </head>
+    
+    <body>
+    <div id="container">
+        <div id="btn1"><img src="uparrow.png"></div>
+        <div id="btn2"><img src="downarrow.png"></div>
+        </div>
+    
+    <script>
+        
+        
+          var bg = document.getElementById("container");
+       var btn1 = document.getElementById("btn1");
+       var btn2 = document.getElementById("btn2");
+        numClicks = 0;
+        
+       btn1.addEventListener("click", function(){
+           console.log("click")
+           numClicks++;
+           console.log(numClicks);
+           
+           if (numClicks == 0){
+              document.getElementById("container").style.backgroundImage="url(1.jpg)";
+           }
+           
+           if (numClicks == 1){
+              document.getElementById("container").style.backgroundImage="url(2.jpg)";
+           }
+            
+            if (numClicks == 2){
+              document.getElementById("container").style.backgroundImage="url(3.jpg)";
+           }
+            
+            if (numClicks == 3){
+               document.getElementById("container").style.backgroundImage="url(4.jpg)";
+           }
+            
+            if (numClicks == 4){
+               document.getElementById("container").style.backgroundImage="url(5.jpg)";
+           }
+           
+           if (numClicks == 5){
+               document.getElementById("container").style.backgroundImage="url(1.jpg)";
+               numClicks = 0;
+           }
+           
+           if (numClicks ==-1){
+               document.getElementById("container").style.backgroundImage="url(5.jpg)";
+           }
+           
+           if (numClicks ==-2){
+               document.getElementById("container").style.backgroundImage="url(4.jpg)";
+           }
+           
+           if (numClicks ==-3){
+               document.getElementById("container").style.backgroundImage="url(3.jpg)";
+           }
+           
+           if (numClicks ==-4){
+               document.getElementById("container").style.backgroundImage="url(2.jpg)";
+           }
+           
+           if (numClicks ==-5){
+               document.getElementById("container").style.backgroundImage="url(1.jpg)";
+               numClicks = 0;
+           }
+          
+       });
+        
+        
+        btn2.addEventListener("click", function(){
+           console.log("click")
+           numClicks--;
+           console.log(numClicks);
+        
+        
+        
+           if (numClicks == 0){
+              document.getElementById("container").style.backgroundImage="url(1.jpg)";
+           }
+            
+             if (numClicks == 1){
+              document.getElementById("container").style.backgroundImage="url(2.jpg)";
+           }
+            
+            
+        if (numClicks == 2){
+              document.getElementById("container").style.backgroundImage="url(3.jpg)";
+           }
+            
+            if (numClicks == 3){
+               document.getElementById("container").style.backgroundImage="url(4.jpg)";
+           }
+            
+            if (numClicks == 4){
+               document.getElementById("container").style.backgroundImage="url(5.jpg)";
+           }
+           
+           if (numClicks == 5){
+               document.getElementById("container").style.backgroundImage="url(1.jpg)";
+               numClicks = 0;
+           }
+           
+            if (numClicks == -1){
+                document.getElementById("container").style.backgroundImage="url(5.jpg)";
+            }
+        
+        if (numClicks == -2){
+                document.getElementById("container").style.backgroundImage="url(4.jpg)";
+            }
+            
+             if (numClicks == -3){
+                document.getElementById("container").style.backgroundImage="url(3.jpg)";
+            }
+            
+             if (numClicks == -4){
+                document.getElementById("container").style.backgroundImage="url(2.jpg)";
+            }
+        
+        if (numClicks == -5){
+               document.getElementById("container").style.backgroundImage="url(1.jpg)";
+               numClicks = 0;
+           }
+        
+        });
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  
+//     
+        </script>
+        
+        
+        
+    </body>
+    
+</html>
